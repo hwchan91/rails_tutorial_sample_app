@@ -47,6 +47,8 @@ GEM
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (9.0.0)
     coderay (1.1.1)
@@ -61,6 +63,8 @@ GEM
     debug_inspector (0.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     ffi (1.9.18)
     ffi (1.9.18-x86-mingw32)
     formatador (0.2.5)
@@ -190,6 +194,8 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2017.2)
+      tzinfo (>= 1.0.0)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
     web-console (3.1.1)
@@ -199,6 +205,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.5)
 
 PLATFORMS
   ruby
@@ -207,8 +214,10 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.11)
   bootstrap-sass (= 3.3.6)
+  bootstrap-will_paginate (= 1.0.0)
   byebug (= 9.0.0)
   coffee-rails (= 4.2.1)
+  faker (= 1.7.3)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.4.0)
@@ -231,6 +240,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (= 3.0.0)
   web-console (= 3.1.1)
+  will_paginate (= 3.1.5)
 
 BUNDLED WITH
    1.15.0
