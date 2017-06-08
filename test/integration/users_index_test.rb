@@ -41,7 +41,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     assert_equal 1, ActionMailer::Base.deliveries.size
     user = assigns(:user)
     assert_not user.activated?
-    log_in_as(@admin)
+    log_in_as(@non_admin)
     last_page = User.count / 30 + 1
     get users_path, page: last_page
     assert_select 'a[href=?]', user_path(user), count: 0
@@ -49,7 +49,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     get edit_account_activation_path(user.activation_token, email: user.email)
     assert user.reload.activated?
     delete logout_path
-    log_in_as(@admin)
+    log_in_as(@non_admin)
     get users_path, page: last_page
     assert_select 'a[href=?]', user_path(user)
   end
