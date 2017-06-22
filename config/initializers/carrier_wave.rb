@@ -5,7 +5,7 @@ if Rails.env.production?
       :provider              => 'AWS',
       :aws_access_key_id     => ENV['AKIAIEI3JW7PL5DTZ74Q'],
       :aws_secret_access_key => ENV['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'],
-      :region                => ENV['us-east-2']
+      :region                => ENV['ap-northeast-1']
       }
     config.fog_directory     =  ENV['railstutorial.hwchan91']
   end
